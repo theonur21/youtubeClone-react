@@ -1,7 +1,7 @@
 
 <h1> YOUTUBE CLONE </h1>
 
-"making a youtube clone project"
+"Developing a youtube clone project"
 
 # Kütüphaneler
 
