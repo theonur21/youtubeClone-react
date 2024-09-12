@@ -27,7 +27,6 @@ const SearchResults = () => {
       .then((res) => setVideos(res.data.contents));
   }, [query]);
 
-  console.log(videos);
 
   return (
     <div className="flex">
