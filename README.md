@@ -20,11 +20,11 @@
 - Bu veriyi `Feed.jsx` ' kullan ve herbir video objesi için ekrana `VideoCard.jsx` bas...
 
 - Videolardan birine tıklandığında kullanıyı o videonun id'sini parametre olarak içeren bir linke yöndlendir...
-- - `VideoDetail.jsx` sayfasında urlden parametreyi al,
-- - parametreyle braber apiye video detayları için istek at,
+- - `VideoDetail.jsx` sayfasında url'den parametreyi al,
+- - parametre ile beraber api'ye video detayları için istek at,
 - - api'den gelen veriyi ekrana bas...
 
-- Eski Yönlendirğimiz Link
+- Eski Yönlendirdiğimiz Link
 - - parametre yöntemiyle ekledik:
     /results/react.js
 - - Bu şekilde yönlendirince özel karakterlerde sorun oluyor

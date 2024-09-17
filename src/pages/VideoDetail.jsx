@@ -16,11 +16,11 @@ const VideoDetail = () => {
   const [relatedContent, setRelatedContent] = useState(null);
 
   useEffect(() => {
-    // kullanıcı alaklalı videolardan birine tıklarsa
-    // loadin gösterebilmek için null'a çektik
+    // kullanıcıyla alakalı videolardan birine tıklarsa
+    // loading gösterebilmek için null'a çektik
     setDetails(null);
     setRelatedContent(null);
-    // videonun id'sine göre detaylarının bilgisni çek
+    // videonun id'sine göre detaylarının bilgisini çek
     axios
       .get(
         `https://youtube138.p.rapidapi.com/video/details/?id=${params.videoId}`,
@@ -34,7 +34,7 @@ const VideoDetail = () => {
         options
       )
       .then((res) => setRelatedContent(res.data.contents));
-    // ! bağımlılık olrak useParamsatan gelen videonun is sini ekledik
+    // ! bağımlılık olarak useParamstan gelen videonun idsini ekledik
     // ! alakalı videolaradan birine tıklanırsa onun verisini çekmek istiyoruz
   }, [params.videoId]);
 

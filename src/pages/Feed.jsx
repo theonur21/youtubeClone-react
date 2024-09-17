@@ -5,6 +5,7 @@ import VideoCard from '../components/VideoCard';
 
 const Feed = () => {
   const { searchResult } = useContext(YoutubeContext);
+  
   return (
     <div className="flex">
       <SideNav />

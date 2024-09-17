@@ -10,7 +10,7 @@ const SearchResults = () => {
   const [videos, setVideos] = useState(null);
   //   url'den arama terimini alma:
   const [searchParams, setSearchParams] = useSearchParams();
-  // get methodu yardımıyla aram terimini alma
+  // get methodu yardımıyla arama terimini alma
   const query = searchParams.get('search_query');
 
   console.log('ARRAMA TERİMİ>>', query);
@@ -18,7 +18,7 @@ const SearchResults = () => {
     // her aramının başında videolara  null değerini atadık
     // aşağıdaki sorgu sayesinde null iken loading bastık
     setVideos(null);
-    // aram termiyle alakalı videoları çekme
+    // arama termiyle alakalı videoları çekme
     axios
       .get(
         `https://youtube138.p.rapidapi.com/search/?q=${query}`,
